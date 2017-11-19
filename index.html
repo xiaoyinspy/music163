@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="baidu-site-verification" content="cNhJHKEzsD" />
+<meta property="qc:admins" content="27354635321361636375" />
+<link rel="canonical" href="https://music.163.com/">
+<meta name="applicable-device" content="pc,mobile">
+<title>网易云音乐</title>
+<meta name="keywords" content="网易云音乐，音乐，播放器，网易，下载，播放，DJ，免费，明星，精选，歌单，识别音乐，收藏，分享音乐，音乐互动，高音质，320K，音乐社交，官网，music.163.com" />
+<meta name="description" content="网易云音乐是一款专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，为用户打造全新的音乐生活。" />
+<style>
+    html,body{
+        overflow:hidden;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+    body{
+        font-size: 12px;
+        color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body, html, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, header, menu, section, p, input, td, th, ins {
+        padding: 0;
+        margin: 0;
+    }
+    ul, menu, dir {
+        display: block;
+        list-style-type: disc;
+        -webkit-margin-before: 1em;
+        -webkit-margin-after: 1em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-start: 40px;
+    }
+    ul{
+        list-style-type: none;
+    }
+    li{
+        list-style: none;
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+    i, cite, em, var, address, dfn {
+        font-style: italic;
+    }
+  .m-top .logo, .m-nav .cor, .m-nav .hot, .m-srch .srchbg, .m-mail, .m-tophead, .m-topvd {
+        background: url(imgs/topbar.png) no-repeat 0 9999px;
+    }
+    body, textarea, select, input, button {
+        font-size: 12px;
+        color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+        -webkit-text-size-adjust: none;
+    }
+    input {
+        -webkit-appearance: textfield;
+        background-color: white;
+        -webkit-rtl-ordering: logical;
+        user-select: text;
+        cursor: auto;
+        padding: 1px;
+        border-width: 2px;
+        border-style: inset;
+        border-color: initial;
+        border-image: initial;
+    }
+
+    input, textarea, select, button {
+        text-rendering: auto;
+        color: initial;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: start;
+        margin: 0em 0em 0em 0em;
+        font: 13.3333px Arial;
+    }
+     input, textarea, select, button, meter, progress {
+        -webkit-writing-mode: horizontal-tb;
+    }
+   /* 页面格式统一处理。*/
+    [hidefocus] {
+        outline: none;
+    }
+    a, a *, .f-hand, .f-hand * {
+        cursor: pointer;
+    }
+    em, i {
+        font-style: normal;
+        text-align: left;
+        font-size: inherit;
+    }
+    /*兼容Chrome浏览器*/
+    a:-webkit-any-link {
+        color: -webkit-link;
+        cursor: auto;
+
+    }
+    .g-topbar{
+        width:   1338px;
+        position: absolute;
+        /*上面的10px是怎么回事？？*/
+        top: -10px;
+        color:white;
+        z-index: 99;
+        zoom: 1;
+        display: block;
+        background-color: #242424;
+    }
+    .g-topbar a{
+        text-decoration: none;
+        color: #525252;
+        cursor: pointer;
+    }
+    h1 {
+        display: block;
+        font-size: 2em;
+        -webkit-margin-before: 0.67em;
+        -webkit-margin-after: 0.67em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-weight: bold;
+    }
+    .g-topbar a:hover{
+        color: white;
+    }
+    .m-top{
+        position: relative;
+        z-index: 1000;
+        height: 70px;
+        box-sizing: border-box;
+        background: #242424;
+        border-bottom: 1px solid #000;
+        visibility: visible;
+        margin:0;
+    }
+    .m-top .wrap {
+        width: 1100px;
+        margin: 0 auto;
+    }
+    .m-top .logo {
+        float: left;
+        width: 176px;
+        height: 69px;
+        background-position: 0 0;
+        margin:0;
+
+    }
+    .f-cb:after {
+        clear: both;
+        content: '.';
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+    .m-top .logo a {
+        float: left;
+        width: 157px;
+        height: 100%;
+        padding-right: 20px;
+        text-indent: -9999px;
+    }
+    .m-nav li {
+        position: relative;
+        background-position: right -300px;
+    }
+    .m-nav li, .m-nav li span, .m-nav a, .m-nav a em {
+        float: left;
+        height: 70px;
+        font-size: 14px;
+    }
+    .m-nav li.lst, .m-nav li.fst span {
+        background: none;
+    }
+    .m-nav a:hover, .m-nav a.z-slt {
+        background: #000;
+        text-decoration: none;
+        color: #fff;
+    }
+    .m-nav a {
+        padding: 0 19px;
+        text-align: center;
+        line-height: 70px;
+        color: #ccc;
+    }
+    sub {
+        vertical-align: sub;
+        font-size: smaller;
+    }
+    .m-nav .hot {
+        display: block;
+        position: absolute;
+        top: 21px;
+        left: 100px;
+        width: 28px;
+        height: 19px;
+        background-position: -190px 0;
+    }
+    .m-nav a.z-slt .cor {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 64px;
+        width: 12px;
+        height: 7px;
+        margin-left: -6px;
+        overflow: hidden;
+        background-position: -226px 0;
+    }
+   .f-pr {
+        position: relative;
+        zoom: 1;
+    }
+    .m-tophead {
+        float: right;
+
+        height: 45px;
+        margin: 20px 0 0 20px;
+        padding: 0 22px 0 0;
+        background-position: right -46px;
+    }
+    .m-tophead .link, .m-tophead .link:hover {
+      display: block;
+        width: 28px;
+        margin-top: 10px;
+        color: #787878;
+    }/
+    .s-fc3, a.s-fc3:hover {
+        color: #666;
+    }
+    .m-tlist {
+        position: absolute;
+        top: 38px;
+        right: -43px;
+        width: 158px;
+        background: #2b2b2b;
+        border: 1px solid #202020;
+        box-shadow: 0 8px 24px 0 rgba(0,0,0,0.50);
+        border-radius: 4px;
+    }
+    .m-tlist .arr {
+        position: absolute;
+        top: -8px;
+        left: 50%;
+        width: 14px;
+        height: 8px;
+        margin-left: -7px;
+        background-position: -20px 0;
+    }
+    .m-topvd {
+        float: right;
+        width: 90px;
+        height: 32px;
+        margin: 19px 0 0 12px;
+        box-sizing: border-box;
+        padding-left: 32px;
+        background-position: 0 -140px;
+        line-height: 33px;
+        color: #ccc;
+    }
+    .m-srch, .m-srch .srchbg {
+        float: right;
+        width: 158px;
+        height: 32px;
+    }
+    .m-srch .srchbg {
+        margin-top: 19px;
+        background-position: 0 -99px;
+        background-color: #fff;
+        border-radius: 32px;
+    }
+    .m-srch .parent {
+        display: block;
+        position: relative;
+        margin: 8px 0 0 30px;
+    }
+    .m-srch .parent input {
+        color: #333;
+        line-height: 16px;
+    }
+
+    .m-srch .parent input {
+        width: 95%;
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        color: #fff;
+    }
+    img, .txt {
+        border: 0;
+    }
+    .m-srch .parent input {
+        color: #333;
+        line-height: 16px;
+    }
+    .m-srch .parent input {
+        width: 95%;
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        color: #fff;
+    }
+    .m-srch .parent label {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90%;
+        color: #9b9b9b;
+        cursor: text;
+    }
+    label {
+        cursor: default;
+    }
+    .m-srch .u-showoff {
+        position: absolute;
+        top: 108px;
+        left: 16px;
+        width: 180px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #fe5555;
+        color: #fff;
+        text-align: center;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+    .f-hide, .js-hide {
+        display: none !important;
+    }
+    .m-srch .u-showoff:before {
+        position: absolute;
+        top: -50px;
+        left: 88px;
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #fe5555;
+    }
+    .m-srch .u-showoff:after {
+        position: absolute;
+        top: -43px;
+        left: 91px;
+        content: '';
+        width: 2px;
+        height: 45px;
+        background: #fe5555;
+    }
+    .m-subnav {
+        z-index: 90;
+        height: 35px;
+        box-sizing: border-box;
+        background-color: #C20C0C;
+        border-bottom: 1px solid #a40011;
+    }
+    .m-subnav .wrap {
+        width: 1100px;
+        height: 34px;
+        margin: 0 auto;
+    }
+    .m-subnav .nav {
+        float: left;
+       padding-left: 180px;
+        margin: 0;
+    }
+    .m-subnav .nav li, .m-subnav .nav a {
+        float: left;
+        height: 34px;
+        text-align: center;
+    }
+    .m-subnav .nav a:hover, .m-subnav .nav a.z-slt {
+        color: #fff;
+        text-decoration: none;
+    }
+    .m-subnav .nav a {
+        color: #fff;
+    }
+    .m-subnav .nav a:hover em, .m-subnav .nav a.z-slt em {
+        background: #9B0909;
+    }
+    .m-subnav .nav a em {
+        display: inline-block;
+        height: 20px;
+        padding: 0 13px;
+        margin: 7px 17px 0;
+        border-radius: 20px;
+        line-height: 21px;
+    }
+
+</style>
+</head>
+<body>
+<div id="g-topbar" class="g-topbar" >
+    <div class="m-top">
+        <div class="wrap f-cb">
+            <h1 class="logo"><a hidefocus="true" href="#">网易云音乐</a></h1>
+            <ul class="m-nav j-tflag">
+                <li class="fst">
+                    <span><a hidefocus="true" href="#" data-module="discover" class="z-slt"><em>发现音乐</em><sub class="cor">&nbsp;</sub></a></span>
+                </li>
+                <li>
+                    <span><a data-action="bilog" data-log-action="page" data-log-json="{&quot;type&quot;:&quot;my&quot;}" hidefocus="true" href="/my/" data-module="my"><em>我的音乐</em><sub class="cor">&nbsp;</sub></a></span>
+                </li>
+                <li>
+                    <span><a hidefocus="true" href="#" data-module="friend"><em>朋友</em><sub class="cor">&nbsp;</sub><i class="dot j-t" style="display:none;"></i></a></span>
+                </li>
+                <li>
+                    <span><a hidefocus="true" href="#" target="_blank" data-module="store"><em>商城</em></a></span>
+                </li>
+                <li>
+                    <span><a hidefocus="true" href="#" target="_blank" data-module="musician"><em>音乐人</em></a></span>
+                </li>
+                <li class="lst">
+                    <span><a id="topbar-download-link" data-action="bilog" data-log-action="page" data-log-json="{&quot;type&quot;:&quot;downloadapp&quot;,&quot;source&quot;:&quot;tab&quot;}" hidefocus="true" href="/download" data-module="download"><em>下载客户端</em><sub class="cor">&nbsp;</sub></a></span><sup class="hot">&nbsp;</sup>
+                </li>
+            </ul>
+            <div class="m-tophead f-pr j-tflag" id="auto-id-KtJTTnL6dgRkcHIm"><a hidefocus="true" href="#" class="link s-fc3" data-action="login">登录</a>
+                <div class="m-tlist j-uflag" style="display:none;">
+                    <div class="inner">
+                        <ul class="f-cb">
+                            <li class="lb"><a hidefocus="true" class="itm-1" href="#" data-action="login" data-type="mobile"><i class="icn icn-mb"></i><em>手机号登录</em></a></li>
+                            <li class="ltb"><a hidefocus="true" class="itm-2" href="https://music.163.com/api/sns/authorize?snsType=10&amp;clientType=web2&amp;callbackType=Login&amp;forcelogin=true" target="_blank" data-action="login" data-type="tencent"><i class="icn icn-wx"></i><em>微信登录</em></a></li>
+                            <li class="lb"><a hidefocus="true" class="itm-2" href="https://music.163.com/api/sns/authorize?snsType=5&amp;clientType=web2&amp;callbackType=Login&amp;forcelogin=true" target="_blank" data-action="login" data-type="tencent"><i class="icn icn-qq"></i><em>QQ登录</em></a></li>
+                            <li class="ltb"><a hidefocus="true" class="itm-2" href="https://music.163.com/api/sns/authorize?snsType=2&amp;clientType=web2&amp;callbackType=Login&amp;forcelogin=true" target="_blank" data-action="login" data-type="sina"><i class="icn icn-sn"></i><em>新浪微博登录</em></a></li>
+                            <li class="lb"><a hidefocus="true" class="itm-2" href="#" data-action="login" data-type="netease"><i class="icn icn-wy"></i><em>网易邮箱帐号登录</em></a></li>
+                        </ul>
+                    </div>
+                    <i class="arr"></i>
+                </div>
+            </div>
+            <a data-action="bilog" data-log-action="click" data-log-json="{&quot;target&quot;:&quot;uploadvideo&quot;,&quot;page&quot;:&quot;homepage&quot;}" href="/login?targetUrl=%2Fuservideo" target="_blank" class="m-topvd f-pr">视频投稿</a>
+            <div class="m-srch f-pr j-suggest" id="g_search">
+                <div class="srchbg">
+<span class="parent">
+<input type="text" class="txt j-flag" value="" id="auto-id-Ak0yJfob98XSM7Fn" style="opacity: 1;">
+<label class="ph j-flag" id="auto-id-89x2LpWthnB56okH">音乐/电台/用户</label>
+</span>
+                </div>
+                <div class="j-showoff u-showoff f-hide"><p>现在支持搜索MV啦~</p></div>
+                <span class="j-flag" style="display:none;" id="auto-id-uVA9OoFPk801GlTZ">&nbsp;</span>
+                <div class="u-lstlay j-flag" style="display:none;" id="auto-id-l5G2Vq3WNJA1gLJ1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="m-subnav m-subnav-up f-pr j-tflag f-hide"></div>
+    <div id="g_nav2" class="m-subnav j-tflag">
+        <div class="wrap f-pr">
+            <ul class="nav">
+                <li><a hidefocus="true" data-module="discover" href="/#" class="z-slt"><em>推荐</em></a></li>
+                <li><a hidefocus="true" data-module="toplist" href="/#"><em>排行榜</em></a></li>
+                <li><a hidefocus="true" data-module="playlist" href="/#"><em>歌单</em></a></li>
+                <li><a hidefocus="true" data-module="djradio" href="/#"><em>主播电台</em></a></li>
+                <li><a hidefocus="true" data-module="artist" href="/#"><em>歌手</em></a></li>
+                <li><a hidefocus="true" data-module="album" href="/#"><em>新碟上架</em></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
