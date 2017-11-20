@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery实现淡入淡出轮播图带左右按钮及下方小圆点</title>
+    <style>
+        .carousel{
+            width: 800px;
+            margin: auto;
+            position: relative;
+        }
+
+        .carousel ul{
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 800px;
+            height: 500px;
+
+        }
+        .carousel ul li{
+            list-style: none;
+            float: left;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        #item1{
+            z-index: 3;
+        }
+        #item2{
+            z-index: 2;
+        }
+        #item3{
+            z-index: 1;
+        }
+        /*向左向右的按钮*/
+        .left,.right{
+            position: absolute;
+            top: 200px;
+            z-index: 10;
+            width: 30px;
+            height: 30px;
+            border: none;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 0;
+            opacity: 0.1;
+            cursor: pointer;
+        }
+        .left{
+            left: 0;
+        }
+        .right{
+            right: 0;
+        }
+        .left:hover,.right:hover{
+            opacity:1;
+        }
+        /*圆点*/
+        .dot{
+            width: 800px;
+            bottom: 0;
+            height: 30px;
+            position: absolute;
+            text-align: center;
+            z-index: 10;
+        }
+        .dot span{
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50px;
+            background: #fff;
+            margin: 0 15px 0 0 ;
+            cursor: pointer;
+        }
+        .dot .active{
+            background: #f00 !important;
+        }
+    </style>
+</head>
+<body>
+<div class="carousel">
+    <!--左侧按钮-->
+    <button class="left"><<</button>
+    <ul id="carousel">
+        <li id="item1">
+            <img src="imgs/poster1.png" />
+        </li>
+        <li id="item2">
+            <img src="imgs/poster2.png" />
+        </li>
+        <li id="item3">
+            <img src="imgs/poster3.png" />
+        </li>
+    </ul>
+    <!--下方小圆点-->
+    <div class="dot"><span class="active"></span><span></span><span></span></div>
+    <!--右侧按钮-->
+    <button class="right">>></button>
+</div>
+<script type="text/javascript" src="js/jquery.1.10.2.js"></script>
+<script>
+
+    $(function(){
+        var items = $('#carousel').children();
+        var len = items.length;
+        var index = 0;
+        var str = 0;
+        var dots =  $('.dot').children();
+        /*var dotsChild = $('.dot span');*/
+
+        //自动播放函数autoPlay()
+
+        function autoPlay(){
+            $(items[index]).fadeIn(1000);
+
+            function play(){
+                $(dots).removeClass("active");
+                if(index >=0 & index < len-1){
+                    $(items[index]).fadeOut(1500);
+                    index++;
+                    $(items[index]).fadeIn(1500);
+                    $(dots[index]).addClass("active");
+                }else{
+                    $(items[index]).fadeOut(1500);
+                    index=0;
+                    $(items[index]).fadeIn(1500);
+                    $(dots[index]).addClass("active");
+                };
+                str = index;
+            }
+
+            setInterval(play,7000);
+
+        }
+        autoPlay();
+
+        //点击左侧按钮的函数
+        $(".left").click(function(){
+            $(dots).removeClass("active");
+            if(str == 0){
+                $(items[str]).fadeOut(1500);
+                str = len-1;
+                $(items[str]).fadeIn(1500);
+                $(dots[str]).addClass("active");
+                index = str;
+
+            }else{
+                $(items[str]).fadeOut(1500);
+                str --;
+                $(items[str]).fadeIn(1500);
+                $(dots[str]).addClass("active");
+                index = str;
+            }
+        });
+        //点击右侧按钮的函数
+        $(".right").click(function(){
+            $(dots).removeClass("active");
+            if(str == len-1){
+                $(items[str]).fadeOut(1500);
+                str = 0;
+                $(items[str]).fadeIn(1500);
+                $(dots[str]).addClass("active");
+                index = str;
+            }else{
+                $(items[str]).fadeOut(1500);
+                str ++;
+                $(items[str]).fadeIn(1500);
+                $(dots[str]).addClass("active");
+                index = str;
+            }
+        })
+        //小圆点
+        $(".dot span").click(function(){
+            var num = $(this).index();
+            $(dots).removeClass("active");
+            $(dots[num]).addClass("active");
+            $(items).fadeOut(1500);
+            $(items[num]).fadeIn(1500);
+            index = num;
+        })
+    });
+</script>
+</body>
+</html>
